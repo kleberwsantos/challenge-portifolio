@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --first-color:#FF204E;
+    --second-color:#A0153E;
+    --third-color: #ffff;
+    --fourth-color: #4D4D4D;
+    --fifth-color: #757575;;
+    --font--principal: "Montserrat", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #000; 
+}
+
+/* Menu */
+.menu{
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 9;
+    padding: 0.5%;
+    background-color: #FF204E;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: var(--font--principal);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.menu a:hover{
+    color: var(--second-color);
+}
+
+/* Seção Apresentação */
+
+.presentation{
+    padding: 5% 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px; 
+}
+
+.presentation__content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.presentation__content h1{
+    font-family: var(--font--principal);
+    color: var(--first-color);
+    font-size: 4rem;
+    font-weight: 700;
+
+}
+
+.presentation__content h2{
+    font-family: var(--font--principal);
+    color: var(--fourth-color);
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.presentation__content p{
+    font-family: var(--font--principal);
+    color: var(--fifth-color);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.presentation__links{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.presentation__links__social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background-color: var(--first-color);
+    width: 20%;
+    text-align: center;
+    border-radius: 8px;
+    font-family: var(--font--principal);
+    color: var(--third-color);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.presentation__links__social:hover {
+    background-color: var(--second-color); /* Altera a cor de fundo ao passar o mouse */
+}
+/* Seção Sobre mim */
+
+.about{
+    padding: 5% 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: var(--second-color);
+}
+
+.about__content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about__content h2{
+    font-family: var(--font--principal);
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: var(--fifth-color);
+}
+
+.about__content p{
+    font-family: var(--font--principal);
+    font-size: 1.35rem;
+    font-weight: 500;
+    color: var(--third-color);
+}
+
+/* Seção Skills */
+
+.skills{
+    padding: 5% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    font-family: var(--font--principal);
+    text-align: center;
+}
+
+.skills h2{
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: var(--first-color);
+}
+
+.skills__content{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.skills__content h3{
+    font-family: var(--font--principal);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--fourth-color);
+}
+
+/* Seção Hobbies */
+
+.hobbies{
+    padding: 5% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    background-color: var(--first-color);
+    font-family: var(--font--principal);
+    text-align: center;  
+}
+
+.hobbies h2{
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: var(--third-color);
+}
+
+.hobbies__content{
+    width: 50%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+    
+}
+
+.hobbies__content h3{
+    font-family: var(--font--principal);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--third-color);
+}
+
+/* Seção Formação */
+
+.formation{
+    padding: 5% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    font-family: var(--font--principal);
+    text-align: center;
+}
+
+.formation h2{
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: var(--first-color);
+}
+
+.formation h4{
+    font-size: 1.5rem;
+    color: var(--first-color);
+    font-weight: 600;
+}
+
+.formation h5{
+    font-size: 1.3rem;
+    color: var(--fourth-color);
+    font-weight: 500;
+}
+.formation__content{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.formation__content__content{
+    width: 50%;
+    gap: 10px;
+}
+
+/* Seção Projetos */
+
+.projects{
+    padding: 5% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    font-family: var(--font--principal);
+    text-align: center;
+    background-color: var(--second-color);
+}
+
+.projects h2{
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: var(--third-color);
+}
+
+.projects p{
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: var(--first-color);
+}
+
+/* Seção Contato */
+
+.contact{
+    padding: 5% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    font-family: var(--font--principal);
+}
+
+.contact h2{
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: var(--first-color);
+}
+
+.contact label{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--first-color);
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid var(--first-color); /* Define a borda padrão */
+    border-radius: 10px;
+    box-sizing: border-box;
+    resize: none;
+    font-family: var(--font--principal);
+    font-weight: 500;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: var(--second-color); /* Cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão do navegador */
+}
+
+input[type="submit"] {
+    background-color: var(--second-color); /* Cor de fundo */
+    color: var(--third-color); /* Cor do texto */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--font--principal);
+    font-weight: 700;
+}
+
+/* Efeito de hover */
+input[type="submit"]:hover {
+    background-color: var(--first-color); /* Cor de fundo ao passar o mouse */
+    color: var(--second-color); /* Cor do texto ao passar o mouse */
+}
+/* Seção Footer */
+footer{
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font--principal);
+    color: var(--third-color);
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: var(--first-color);
+}
